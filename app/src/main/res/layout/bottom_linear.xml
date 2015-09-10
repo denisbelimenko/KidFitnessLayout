@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_lin"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/bottompanel_height"
+    android:paddingBottom="4dp"
+    android:layout_marginTop="4dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:orientation="horizontal"
+    android:gravity="bottom|left">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_block_height">
+
+            <Button
+                android:layout_gravity="bottom|left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:id="@+id/button_walking"/>
+
+            <com.probes.kidfitnesslayout.MyTextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="Walking"
+                android:textSize="@dimen/bottom_block_text"
+                android:paddingBottom="2dp"
+                customfontdemo:fontName="HelveticaNeueCyr-Roman.otf"
+                style="@style/TEXT_WALKING"
+                android:id="@+id/text_walking"/>
+
+            <ImageView
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="@dimen/bottom_block_image_height"
+                android:visibility="visible"
+                android:id="@+id/image_walking"
+                android:src="@drawable/walkingin" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/bottom_block_height">
+
+            <Button
+                android:layout_gravity="bottom|left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:id="@+id/button_running"
+                android:clickable="true"
+                android:visibility="visible"/>
+
+            <com.probes.kidfitnesslayout.MyTextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="Running"
+                android:textSize="@dimen/bottom_block_text"
+                android:paddingBottom="2dp"
+                customfontdemo:fontName="HelveticaNeueCyr-Roman.otf"
+                style="@style/TEXT_RUNNING"
+                android:id="@+id/text_running"/>
+
+            <ImageView
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="@dimen/bottom_block_image_height"
+                android:visibility="visible"
+                android:src="@drawable/runningin"
+                android:id="@+id/image_running" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/bottom_block_height">
+
+            <Button
+                android:layout_gravity="bottom|left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:id="@+id/button_jumping"/>
+
+            <com.probes.kidfitnesslayout.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Jumping rope"
+                android:textSize="@dimen/bottom_block_text"
+                customfontdemo:fontName="HelveticaNeueCyr-Roman.otf"
+                android:paddingBottom="2dp"
+                style="@style/TEXT_JUMPING"
+                android:id="@+id/text_jumping" />
+
+            <ImageView
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/bottom_block_image_height"
+                android:layout_centerHorizontal="true"
+                android:visibility="visible"
+
+                android:background="@android:color/transparent"
+                android:src="@drawable/jumpingguy"
+                android:id="@+id/image_jumping" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

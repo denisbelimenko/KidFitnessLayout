@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#ff8400"></solid>
+    <size
+        android:width="200dp"
+        android:height="40dp">
+
+    </size>
+    <corners
+
+        android:topLeftRadius="0.000dp"
+        android:topRightRadius="3.53dp"
+        android:bottomLeftRadius="0.000dp"
+        android:bottomRightRadius="3.53dp"></corners>
+</shape><!-- From: file:/D:/AndroidWorkProjects/KidFitnessLayout/app/src/main/res/drawable/runningcharts.xml -->

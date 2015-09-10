@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="8"
+            android:layout_width="@dimen/datebar_width"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/left_date_res"
+                android:layout_width="@dimen/arrow_dimen"
+                android:layout_height="@dimen/arrow_dimen"
+                android:onClick="left_arrow_res"
+                android:background="@drawable/arrowleftselector"/>
+
+            <com.probes.kidfitnesslayout.MyTextView
+                android:id="@+id/date_res"
+                android:gravity="center_horizontal|center"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:textSize="@dimen/date_text"
+                customfontdemo:fontName="HelveticaNeueCyr-Light.otf"/>
+
+            <Button
+                android:id="@+id/right_date_res"
+                android:layout_width="@dimen/arrow_dimen"
+                android:layout_height="@dimen/arrow_dimen"
+                android:background="@drawable/arrowrightselector"
+                android:onClick="right_arrow_res"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@color/square"/>
+
+                        <com.probes.kidfitnesslayout.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/criteria_name_height"
+                            android:textSize="@dimen/criteria_text"
+                            android:text="@string/time"
+                            android:gravity="center"
+                            customfontdemo:fontName="HelveticaNeueCyr-Roman.otf"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/gridicon_dimen"
+                            android:layout_height="@dimen/gridicon_dimen"
+                            android:src="@drawable/restime"/>
+
+                        <com.probes.kidfitnesslayout.MyTextView
+                            android:text="data"
+                            android:layout_marginTop="@dimen/top_margin_criteria_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/criteria_text_content"
+                            android:textColor="@color/red"
+                            customfontdemo:fontName="HelveticaNeueCyr-Light.otf"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@color/square"/>
+
+                        <com.probes.kidfitnesslayout.MyTextView
+                            android:text="data"
+                            android:layout_marginTop="@dimen/top_margin_criteria_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/criteria_text_content"
+                            android:textColor="@color/red"
+                            customfontdemo:fontName="HelveticaNeueCyr-Light.otf"
+                            android:layout_gravity="center"
+                            android:gravity="center"/>
+
+                        <com.probes.kidfitnesslayout.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/criteria_name_height"
+                            android:textSize="@dimen/criteria_text"
+                            android:text="@string/distance"
+                            android:gravity="center"
+                            customfontdemo:fontName="HelveticaNeueCyr-Roman.otf"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/gridicon_dimen"
+                            android:layout_height="@dimen/gridicon_dimen"
+                            android:src="@drawable/resdistance"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@color/square"/>
+
+                        <com.probes.kidfitnesslayout.MyTextView
+                            android:text="data"
+                            android:layout_marginTop="@dimen/top_margin_criteria_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/criteria_text_content"
+                            android:textColor="@color/red"
+                            customfontdemo:fontName="HelveticaNeueCyr-Light.otf"
+                            android:layout_gravity="center"
+                            android:gravity="center"/>
+
+                        <com.probes.kidfitnesslayout.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/criteria_name_height"
+                            android:textSize="@dimen/criteria_text"
+                            android:gravity="center"
+                            android:text="@string/steps"
+                            customfontdemo:fontName="HelveticaNeueCyr-Roman.otf"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/gridicon_dimen"
+                            android:layout_height="@dimen/gridicon_dimen"
+                            android:src="@drawable/ressteps"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@color/square"/>
+
+                        <com.probes.kidfitnesslayout.MyTextView
+                            android:text="data"
+                            android:layout_marginTop="@dimen/top_margin_criteria_content"
+                            android:id="@+id/text_adapter_numbers"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/criteria_text_content"
+                            android:textColor="@color/red"
+                            customfontdemo:fontName="HelveticaNeueCyr-Light.otf"
+                            android:layout_gravity="center"
+                            android:gravity="center"/>
+
+                        <com.probes.kidfitnesslayout.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/criteria_name_height"
+                            android:textSize="@dimen/criteria_text"
+                            android:gravity="center"
+                            android:text="@string/calories"
+                            customfontdemo:fontName="HelveticaNeueCyr-Roman.otf"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/gridicon_dimen"
+                            android:layout_height="@dimen/gridicon_dimen"
+                            android:src="@drawable/rescalories"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="4dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/running_results_sync_height">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/running_results_sync_height"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/running_results_sync_leftmargin"
+                    android:layout_marginRight="@dimen/running_results_sync_rightmargin"
+                    android:id="@+id/synchr"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/running_results_sync_height"
+                    android:background="@drawable/syncdata"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/running_results_sync_height"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/running_results_sync_leftmargin"
+                    android:layout_marginRight="@dimen/running_results_sync_rightmargin">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/mainlist_sync_data_width"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/arrowresults"
+                        android:layout_gravity="center"/>
+
+                    <com.probes.kidfitnesslayout.MyTextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginTop="1dp"
+                        android:text="@string/sync"
+                        android:textColor="@color/bg"
+                        android:layout_gravity="center"
+                        customfontdemo:fontName="HelveticaNeueCyr-Medium.otf"
+                        android:gravity="left|center"
+                        android:textSize="@dimen/mainlist_sync"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.probes.kidfitnesslayout.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:text="@string/last"
+                            android:textColor="@color/bg"
+                            android:gravity="center|right"
+                            android:textSize="@dimen/mainlist_last"
+                            customfontdemo:fontName="HelveticaNeueLTPro-Bd.otf"/>
+
+                        <com.probes.kidfitnesslayout.MyTextView
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:text="15.02.2015 06:48 PM"
+                            android:textColor="@color/bg"
+                            customfontdemo:fontName="HelveticaNeueLTPro-Bd.otf"
+                            android:gravity="center|right"
+                            android:textSize="@dimen/mainlist_last"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+<!-- From: file:/D:/AndroidWorkProjects/KidFitnessLayout/app/src/main/res/layout/fragment_results.xml -->

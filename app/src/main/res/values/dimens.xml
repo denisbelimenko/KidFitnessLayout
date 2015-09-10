@@ -1,0 +1,77 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+
+    <dimen name="actionbar_height">50dp</dimen>
+    <dimen name="mainlistitem_height">175dp</dimen>
+    <dimen name="userpanel_height">125dp</dimen>
+    <dimen name="bottompanel_height">54dp</dimen>
+    <dimen name="runningbar_width">324dp</dimen>
+    <dimen name="runningbar_item_width">162dp</dimen>
+    <dimen name="runningbar_height">32.4dp</dimen>
+    <dimen name="userpanel_sub_height">50dp</dimen>
+    <dimen name="syncuser_leftmargin">21.27dp</dimen>
+    <dimen name="syncuser_rightmargin">26.91dp</dimen>
+    <dimen name="baruserpanel_leftmargin">25dp</dimen>
+    <dimen name="baruserpanel_rightmargin">34dp</dimen>
+    <dimen name="gridicon_dimen">40dp</dimen>
+    <dimen name="arrow_dimen">22.5dp</dimen>
+    <dimen name="running_results_sync_leftmargin">12.5dp</dimen>
+    <dimen name="running_results_sync_rightmargin">15.8dp</dimen>
+    <dimen name="running_results_sync_height">42dp</dimen>
+    <dimen name="userpanel_arrow_dimen">24dp</dimen>
+    <dimen name="userpanel_menu_dimen">18dp</dimen>
+    <dimen name="bottom_block_height">50dp</dimen>
+    <dimen name="bottom_block_width">120dp</dimen>
+    <dimen name="top_margin_criteria_content">15dp</dimen>
+    <dimen name="criteria_name_height">30dp</dimen>
+    <dimen name="userpanel_sub_width">50dp</dimen>
+    <dimen name="userpanel_titul_lin_height">40dp</dimen>
+    <dimen name="userpanel_rest_height">75dp</dimen>
+    <dimen name="bottom_block_image_height">28dp</dimen>
+    <dimen name="button_add_width">50dp</dimen>
+    <dimen name="button_menu_width">50dp</dimen>
+    <dimen name="button_add_image_dimen">33dp</dimen>
+    <dimen name="logo_height">26dp</dimen>
+    <dimen name="datebar_width">300dp</dimen>
+    <dimen name="chartbar_height">265dp</dimen>
+    <dimen name="charts_button_width">170dp</dimen>
+    <dimen name="charts_button_height">32dp</dimen>
+    <dimen name="charts_button_image_height">32dp</dimen>
+    <dimen name="charts_button_image_width">32dp</dimen>
+    <dimen name="charts_text_height">30dp</dimen>
+    <dimen name="userpanel_titul_height">25dp</dimen>
+    <dimen name="mainlist_layout_top">91.62dp</dimen>
+    <dimen name="mainlist_layout_bottom">83.38dp</dimen>
+    <dimen name="mainlist_name_height">25dp</dimen>
+    <dimen name="mainlist_actlevel_height">30dp</dimen>
+    <dimen name="mainlist_bar_layout_height">11dp</dimen>
+    <dimen name="mainlist_bar_width">232dp</dimen>
+    <dimen name="mainlist_bar_height">8dp</dimen>
+    <dimen name="mainlist_image_titul_height">21.8dp</dimen>
+    <dimen name="mainlist_image_titul_width">239.5dp</dimen>
+    <dimen name="mainlist_sync_data_width">22dp</dimen>
+
+
+    <dimen name="mainlist_name">18sp</dimen>
+    <dimen name="mainlist_actlevel">13.5sp</dimen>
+    <dimen name="mainlist_titul">12sp</dimen>
+    <dimen name="mainlist_sync">12.5sp</dimen>
+    <dimen name="mainlist_last">10sp</dimen>
+    <dimen name="userpanel_name">20sp</dimen>
+    <dimen name="userpanel_actlevel">14sp</dimen>
+    <dimen name="userpanel_titul">14sp</dimen>
+    <dimen name="bottom_block_text">10sp</dimen>
+    <dimen name="date_text">20sp</dimen>
+    <dimen name="criteria_text">14sp</dimen>
+    <dimen name="criteria_text_content">33sp</dimen>
+    <dimen name="running_tabs_text">14sp</dimen>
+    <dimen name="charts_button_text">14sp</dimen>
+
+
+
+
+
+    <dimen name="default_text_size">14sp</dimen>
+
+</resources>

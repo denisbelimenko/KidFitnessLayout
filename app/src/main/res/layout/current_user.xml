@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/curuser"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/userpanel_height"
+    android:background="@color/orange">
+
+    <LinearLayout
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/userpanel_sub_height"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_width="@dimen/userpanel_sub_width"
+            android:layout_height="@dimen/userpanel_sub_height">
+
+            <RelativeLayout
+                android:layout_width="@dimen/userpanel_sub_width"
+                android:layout_height="@dimen/userpanel_sub_height">
+
+                <Button
+                    android:id="@+id/back_user_but"
+                    android:layout_width="@dimen/userpanel_sub_width"
+                    android:layout_height="@dimen/userpanel_sub_height"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="left|center"/>
+
+                <ImageView
+                    android:layout_width="@dimen/userpanel_arrow_dimen"
+                    android:layout_height="@dimen/userpanel_arrow_dimen"
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrowleftuser"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5">
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/cur_face"
+                    android:layout_width="@dimen/userpanel_sub_width"
+                    android:layout_height="@dimen/userpanel_sub_height"
+                    android:src="@drawable/f2"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"/>
+
+                <ImageView
+
+                    android:id="@+id/overlay_user"
+                    android:layout_width="@dimen/userpanel_sub_width"
+                    android:layout_height="@dimen/userpanel_sub_height"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/userpanel_sub_height"
+            android:layout_weight="39">
+
+            <com.probes.kidfitnesslayout.MyTextView
+                android:id="@+id/cur_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/textsample_name"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="1.5dp"
+                android:gravity="left|center_vertical"
+                android:layout_weight="50"
+                customfontdemo:fontName="HelveticaNeueCyr-Roman.otf"
+                android:textColor="@color/bg"
+                android:textSize="@dimen/userpanel_name"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/button_menu_width"
+            android:layout_height="@dimen/userpanel_sub_height">
+
+            <Button
+                android:id="@+id/menu_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:layout_gravity="right|center"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="@dimen/userpanel_menu_dimen"
+                android:layout_height="@dimen/userpanel_menu_dimen"
+                android:layout_marginLeft="2dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/menu"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/userpanel_rest_height"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.probes.kidfitnesslayout.MyTextView
+
+                android:id="@+id/activlevel"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/userpanel_actlevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textsample_actlevel"
+                android:layout_marginRight="@dimen/baruserpanel_rightmargin"
+                android:textColor="@color/bg"
+                customfontdemo:fontName="HelveticaNeueCyr-Medium.otf"
+                android:layout_marginLeft="@dimen/baruserpanel_leftmargin" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="8dp">
+
+            <RelativeLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_marginLeft="@dimen/baruserpanel_leftmargin"
+                android:layout_marginRight="@dimen/baruserpanel_rightmargin">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/progressbar"/>
+
+                <ProgressBar
+                    android:id="@+id/pbo"
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:background="@android:color/transparent"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/userpanel_titul_lin_height">
+
+            <LinearLayout
+                android:layout_weight="2.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/userpanel_titul_lin_height"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="19"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="6dp">
+
+                    <ImageView
+                        android:id="@+id/imagetitul"
+                        android:layout_width="match_parent"
+                        android:layout_height="23dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="27dp"
+                        android:layout_marginTop="0.5dp"/>
+
+                    <com.probes.kidfitnesslayout.MyTextView
+                        android:id="@+id/textlabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/userpanel_titul_height"
+                        android:layout_marginLeft="@dimen/baruserpanel_leftmargin"
+                        android:layout_marginRight="@dimen/baruserpanel_rightmargin"
+                        android:text="@string/label2"
+                        android:textSize="@dimen/userpanel_titul"
+                        customfontdemo:fontName="HelveticaNeueCyr-Medium.otf"
+                        android:gravity="center"
+                        android:textColor="@color/bg"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="3.2"
+                android:layout_width="0dp"
+                android:layout_height="40dp">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

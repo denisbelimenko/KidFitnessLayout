@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\AndroidWorkProjects\KidFitnessLayout\app\libs\GraphView-4.0.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8bd182a66f13dedad362bfbf992be96de2be5969">
+        <dex dex="D:\AndroidWorkProjects\KidFitnessLayout\app\build\intermediates\pre-dexed\debug\GraphView-4.0.1-8f5e77b1d853bb6932b42d9522797998d911f1a9.jar" />
+    </item>
+    <item
+        jar="D:\AndroidWorkProjects\KidFitnessLayout\app\libs\android-support-v4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fc834ac8147bc4ed0b555f90f500a57d4232c448">
+        <dex dex="D:\AndroidWorkProjects\KidFitnessLayout\app\build\intermediates\pre-dexed\debug\android-support-v4-887e3d730ab3fb836482f8c89daa6e9ed2d28fdd.jar" />
+    </item>
+    <item
+        jar="D:\AndroidWorkProjects\KidFitnessLayout\app\libs\android-support-v7-appcompat.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3d62997c154488738d1367406fb7ac6074f992e2">
+        <dex dex="D:\AndroidWorkProjects\KidFitnessLayout\app\build\intermediates\pre-dexed\debug\android-support-v7-appcompat-03bfd8ed96626adff367a717fe1d530abbfc17ac.jar" />
+    </item>
+    <item
+        jar="C:\Users\Denis\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v2.1.3\3fce86548feba9dd220128fa651498c51d099cd8\MPAndroidChart-v2.1.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3fce86548feba9dd220128fa651498c51d099cd8">
+        <dex dex="D:\AndroidWorkProjects\KidFitnessLayout\app\build\intermediates\pre-dexed\debug\MPAndroidChart-v2.1.3-d000ac5c9c769003b11bd869a6acc00b5f1e57af.jar" />
+    </item>
+
+</items>

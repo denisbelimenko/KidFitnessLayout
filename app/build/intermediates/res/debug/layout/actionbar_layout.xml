@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@color/orange"
+    android:layout_height="@dimen/actionbar_height"
+    android:gravity="center"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/actbarlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="@dimen/button_add_width"
+        android:layout_height="@dimen/actionbar_height">
+
+        <RelativeLayout
+            android:layout_width="@dimen/button_add_width"
+            android:layout_height="@dimen/actionbar_height">
+
+            <Button
+                android:id="@+id/add_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:layout_gravity="left|center" />
+
+            <ImageView
+                android:layout_width="@dimen/button_add_image_dimen"
+                android:layout_height="@dimen/button_add_image_dimen"
+                android:layout_centerInParent="true"
+                android:src="@drawable/add"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/logo_height"
+        android:src="@drawable/newlogo"
+        android:layout_gravity="center"
+        android:layout_weight="4000"/>
+
+    <LinearLayout
+        android:layout_width="@dimen/button_menu_width"
+        android:layout_height="@dimen/actionbar_height"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <Button
+
+                android:id="@+id/main_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:layout_gravity="right|center"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="@dimen/userpanel_menu_dimen"
+                android:layout_height="@dimen/userpanel_menu_dimen"
+                android:layout_centerInParent="true"
+                android:src="@drawable/menu"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/D:/AndroidWorkProjects/KidFitnessLayout/app/src/main/res/layout/actionbar_layout.xml -->

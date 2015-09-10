@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/rooty">
+
+        <RelativeLayout
+            android:layout_width="@dimen/runningbar_item_width"
+            android:layout_height="@dimen/runningbar_height"
+            android:background="@android:color/transparent">
+
+            <Button
+                android:id="@+id/btn_results"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/runningresultsin"/>
+
+            <com.probes.kidfitnesslayout.MyTextView
+                android:id="@+id/textresults"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/results"
+                android:textSize="@dimen/running_tabs_text"
+                android:textColor="@color/orange"
+                android:gravity="center"
+                customfontdemo:fontName="HelveticaNeueCyr-Roman.otf"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/runningbar_item_width"
+            android:layout_height="@dimen/runningbar_height">
+
+            <Button
+                android:id="@+id/btn_charts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/runningchartsin"/>
+
+            <com.probes.kidfitnesslayout.MyTextView
+                android:id="@+id/textcharts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/charts"
+                android:textColor="@color/orange"
+                android:gravity="center"
+                android:textSize="@dimen/running_tabs_text"
+                customfontdemo:fontName="HelveticaNeueCyr-Roman.otf"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragRun"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

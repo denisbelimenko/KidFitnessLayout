@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linroot">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/user_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:layout_weight="8.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/fragCont"/>
+
+    <LinearLayout
+        android:id="@+id/user_activity_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center|bottom"
+        android:layout_weight="1.25"
+        android:orientation="horizontal"/>
+
+</LinearLayout><!-- From: file:/D:/AndroidWorkProjects/KidFitnessLayout/app/src/main/res/layout/user_activity_layout.xml -->

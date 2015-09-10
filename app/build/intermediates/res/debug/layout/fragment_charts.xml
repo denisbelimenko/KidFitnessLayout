@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1.1">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="@dimen/datebar_width"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/left_date_charts"
+                android:layout_width="@dimen/arrow_dimen"
+                android:layout_height="@dimen/arrow_dimen"
+                android:onClick="left_arrow_charts"
+                android:background="@drawable/arrowleftselector" />
+
+            <com.probes.kidfitnesslayout.MyTextView
+                android:id="@+id/date_charts"
+                android:layout_gravity="center_horizontal|center"
+                android:gravity="center_horizontal|center"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/charts_text_height"
+                android:layout_weight="8"
+                android:textSize="@dimen/date_text"
+                customfontdemo:fontName="HelveticaNeueCyr-Light.otf"/>
+
+            <Button
+                android:id="@+id/right_date_charts"
+                android:layout_width="@dimen/arrow_dimen"
+                android:layout_height="@dimen/arrow_dimen"
+                android:background="@drawable/arrowrightselector"
+                android:onClick="right_arrow_charts"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/chartbar_height"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/chartie"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_marginTop="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="@dimen/charts_button_width"
+                    android:layout_height="@dimen/charts_button_height"
+                    android:gravity="right"
+                    android:layout_marginRight="3dp">
+
+                    <RelativeLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center">
+
+                        <Button
+                            android:id="@+id/buttontime"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/buttonchartsnon"
+                            android:textSize="@dimen/charts_button_text"/>
+
+                        <ImageView
+                            android:id="@+id/imgtime"
+
+                            android:layout_width="@dimen/charts_button_image_width"
+                            android:layout_height="@dimen/charts_button_image_height"
+                            android:src="@drawable/restime"/>
+
+                        <com.probes.kidfitnesslayout.MyTextView
+                            android:id="@+id/tvtime"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="TIME"
+                            android:textSize="@dimen/charts_button_text"
+                            customfontdemo:fontName="HelveticaNeueCyr-Roman.otf"
+                            android:textColor="@color/dark_gray"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/charts_button_width"
+                    android:layout_height="@dimen/charts_button_height"
+                    android:layout_marginLeft="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/buttondistance"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/buttonchartsnon"
+                            android:textSize="@dimen/charts_button_text"/>
+
+                        <ImageView
+                            android:id="@+id/imgdistance"
+
+                            android:layout_width="@dimen/charts_button_image_width"
+                            android:layout_height="@dimen/charts_button_image_height"
+                            android:src="@drawable/resdistance"/>
+
+                        <com.probes.kidfitnesslayout.MyTextView
+                            android:id="@+id/tvdistance"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="DISTANCE"
+                            android:textSize="@dimen/charts_button_text"
+                            customfontdemo:fontName="HelveticaNeueCyr-Roman.otf"
+                            android:textColor="@color/dark_gray"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="@dimen/charts_button_width"
+                    android:layout_height="@dimen/charts_button_height"
+                    android:layout_marginRight="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/buttonsteps"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/buttonchartsnon"
+                            android:textSize="@dimen/charts_button_text"/>
+
+                        <ImageView
+                            android:id="@+id/imgsteps"
+                            android:layout_width="@dimen/charts_button_image_width"
+                            android:layout_height="@dimen/charts_button_image_height"
+                            android:src="@drawable/ressteps"/>
+
+                        <com.probes.kidfitnesslayout.MyTextView
+                            android:id="@+id/tvsteps"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="STEPS"
+                            android:textSize="@dimen/charts_button_text"
+                            customfontdemo:fontName="HelveticaNeueCyr-Roman.otf"
+                            android:textColor="@color/dark_gray"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/charts_button_width"
+                    android:layout_height="@dimen/charts_button_height"
+                    android:layout_marginLeft="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/buttoncalories"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/charts_button_text"
+                            android:background="@drawable/buttonchartsnon"/>
+
+                        <ImageView
+                            android:id="@+id/imgcalories"
+                            android:layout_width="@dimen/charts_button_image_width"
+                            android:layout_height="@dimen/charts_button_image_height"
+                            android:src="@drawable/rescalories"/>
+
+                        <com.probes.kidfitnesslayout.MyTextView
+                            android:id="@+id/tvcalories"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="CALORIES"
+                            android:textSize="@dimen/charts_button_text"
+                            customfontdemo:fontName="HelveticaNeueCyr-Roman.otf"
+                            android:textColor="@color/dark_gray"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/D:/AndroidWorkProjects/KidFitnessLayout/app/src/main/res/layout/fragment_charts.xml -->
